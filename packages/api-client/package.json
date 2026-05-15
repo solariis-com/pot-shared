@@ -1,0 +1,44 @@
+{
+  "name": "@solariis/pot-api-client",
+  "version": "0.1.0",
+  "description": "Typed API client for POT MVP backend",
+  "license": "UNLICENSED",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "lint": "echo \"@solariis/pot-api-client: lint placeholder — no linter wired yet\"",
+    "codegen": "tsx scripts/generate-from-openapi.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "zod": "^3.23.0"
+  },
+  "peerDependencies": {
+    "@solariis/pot-types": "workspace:*"
+  },
+  "devDependencies": {
+    "@solariis/pot-types": "workspace:*",
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  }
+}
