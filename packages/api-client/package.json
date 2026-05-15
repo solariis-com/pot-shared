@@ -1,5 +1,5 @@
 {
-  "name": "@solariis/pot-api-client",
+  "name": "@solariis-com/pot-api-client",
   "version": "0.1.0",
   "description": "Typed API client for POT MVP backend",
   "license": "UNLICENSED",
@@ -20,7 +20,7 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
-    "lint": "echo \"@solariis/pot-api-client: lint placeholder — no linter wired yet\"",
+    "lint": "echo \"@solariis-com/pot-api-client: lint placeholder — no linter wired yet\"",
     "codegen": "tsx scripts/generate-from-openapi.ts"
   },
   "dependencies": {
@@ -28,10 +28,10 @@
     "zod": "^3.23.0"
   },
   "peerDependencies": {
-    "@solariis/pot-types": "workspace:*"
+    "@solariis-com/pot-types": "workspace:*"
   },
   "devDependencies": {
-    "@solariis/pot-types": "workspace:*",
+    "@solariis-com/pot-types": "workspace:*",
     "@types/node": "^20.0.0",
     "tsup": "^8.0.0",
     "typescript": "^5.4.0",

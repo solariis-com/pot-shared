@@ -1,4 +1,4 @@
-# @solariis/pot-security
+# @solariis-com/pot-security
 
 Security utilities for the POT MVP — JWT, HMAC, AES-256-GCM encryption, OTP,
 idempotency keys, and structured audit-log builders.
@@ -38,7 +38,7 @@ patch when a crypto library ships a CVE.
 ### JWT
 
 ```ts
-import { signJwt, verifyJwt, rotateRefreshToken } from '@solariis/pot-security';
+import { signJwt, verifyJwt, rotateRefreshToken } from '@solariis-com/pot-security';
 
 const access = signJwt({ sub: userId, role: 'user' }, process.env.JWT_SECRET!, {
   expiresIn: '15m',
@@ -58,7 +58,7 @@ const { newRefreshToken, payload } = rotateRefreshToken(oldRefresh, process.env.
 ### HMAC webhooks (FR-R4)
 
 ```ts
-import { signHmac, verifyHmac } from '@solariis/pot-security';
+import { signHmac, verifyHmac } from '@solariis-com/pot-security';
 
 // Outgoing
 const body = JSON.stringify(payload);
@@ -73,7 +73,7 @@ if (!ok) return reply.code(401).send({ error: 'invalid-signature' });
 ### PII encryption (FR-LD)
 
 ```ts
-import { encryptPii, decryptPii, PII_FIELDS } from '@solariis/pot-security';
+import { encryptPii, decryptPii, PII_FIELDS } from '@solariis-com/pot-security';
 
 // 32-byte master key — keep in KMS / Secret Manager, never in env literals.
 const masterKey = Buffer.from(process.env.PII_KEY_BASE64!, 'base64');
@@ -87,7 +87,7 @@ const cedula = decryptPii(ciphertext, iv, authTag, masterKey); // throws on tamp
 ### OTP (FR-AUTH)
 
 ```ts
-import { generateOtp, verifyOtp } from '@solariis/pot-security';
+import { generateOtp, verifyOtp } from '@solariis-com/pot-security';
 
 const { code, expiresAt } = generateOtp(); // 6 digits, 5-minute TTL
 await sms.send(phone, `Your POT code: ${code}`);
@@ -106,7 +106,7 @@ import {
   generateIdempotencyKey,
   validateIdempotencyKey,
   derivedKey,
-} from '@solariis/pot-security';
+} from '@solariis-com/pot-security';
 
 const key = req.headers['idempotency-key'] ?? generateIdempotencyKey();
 if (!validateIdempotencyKey(key)) return reply.code(400).send({ error: 'bad-key' });
@@ -118,7 +118,7 @@ const fp = derivedKey('plink.create', { amount, currency, walletIds });
 ### Audit (FR-LD append-only ledger)
 
 ```ts
-import { buildAuditEvent } from '@solariis/pot-security';
+import { buildAuditEvent } from '@solariis-com/pot-security';
 
 const event = buildAuditEvent({
   actorId: userId,
@@ -171,7 +171,7 @@ await ledger.append(event); // append-only sink (D1 + S3, Kinesis, etc.)
 ## Dev
 
 ```bash
-pnpm --filter @solariis/pot-security test
-pnpm --filter @solariis/pot-security build
-pnpm --filter @solariis/pot-security lint
+pnpm --filter @solariis-com/pot-security test
+pnpm --filter @solariis-com/pot-security build
+pnpm --filter @solariis-com/pot-security lint
 ```

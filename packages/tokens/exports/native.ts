@@ -1,5 +1,5 @@
 /**
- * React Native export for `@solariis/pot-tokens`.
+ * React Native export for `@solariis-com/pot-tokens`.
  *
  * All values are typed for direct consumption inside `StyleSheet.create({...})`:
  *   - colors  → hex strings

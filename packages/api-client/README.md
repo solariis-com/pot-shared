@@ -1,4 +1,4 @@
-# @solariis/pot-api-client
+# @solariis-com/pot-api-client
 
 Typed API client for the POT MVP backend.
 
@@ -12,15 +12,15 @@ Typed API client for the POT MVP backend.
 ## Install
 
 ```bash
-pnpm add @solariis/pot-api-client
+pnpm add @solariis-com/pot-api-client
 # Peer dep — supplied by the consumer (so domain types stay deduplicated):
-pnpm add @solariis/pot-types
+pnpm add @solariis-com/pot-types
 ```
 
 ## Usage
 
 ```ts
-import { POTClient, AuthError, ValidationError } from '@solariis/pot-api-client';
+import { POTClient, AuthError, ValidationError } from '@solariis-com/pot-api-client';
 
 const client = new POTClient({
   baseURL: 'https://api.po-t.app',
@@ -112,7 +112,7 @@ import {
   ValidationError,
   NetworkError,
   R4Error,
-} from '@solariis/pot-api-client';
+} from '@solariis-com/pot-api-client';
 
 try {
   await client.pote.create(input);
@@ -170,7 +170,7 @@ All `POTError` instances carry `.code` (stable machine-readable),
   axios connection pooling.
 - No React hooks. The SDK is framework-agnostic — `pot-mobile` (RN) and
   `pot-web` (Next.js) each layer their own hooks on top.
-- No duplication of domain types — those live in `@solariis/pot-types`.
+- No duplication of domain types — those live in `@solariis-com/pot-types`.
 
 ## Scripts
 

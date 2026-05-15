@@ -1,14 +1,14 @@
-# @solariis/pot-shared
+# @solariis-com/pot-shared
 
 Shared types, microcopy, tokens, API client, security utils para POT MVP.
 
 ## Packages
 
-- `@solariis/pot-types` — Domain models, DTOs, API contracts (Zod-validated)
-- `@solariis/pot-microcopy` — i18n catalog ES/EN
-- `@solariis/pot-tokens` — Design tokens (CSS / Tailwind / RN exports)
-- `@solariis/pot-api-client` — Auto-generated SDK (axios + Zod)
-- `@solariis/pot-security` — JWT, HMAC, encryption, OTP utilities
+- `@solariis-com/pot-types` — Domain models, DTOs, API contracts (Zod-validated)
+- `@solariis-com/pot-microcopy` — i18n catalog ES/EN
+- `@solariis-com/pot-tokens` — Design tokens (CSS / Tailwind / RN exports)
+- `@solariis-com/pot-api-client` — Auto-generated SDK (axios + Zod)
+- `@solariis-com/pot-security` — JWT, HMAC, encryption, OTP utilities
 
 ## Consumed by
 

@@ -1,5 +1,5 @@
 {
-  "name": "@solariis/pot-tokens",
+  "name": "@solariis-com/pot-tokens",
   "version": "0.1.0",
   "description": "Design tokens for POT MVP (CSS, Tailwind, React Native exports)",
   "license": "UNLICENSED",
@@ -35,7 +35,7 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
-    "lint": "echo \"@solariis/pot-tokens: lint placeholder — no linter wired yet\""
+    "lint": "echo \"@solariis-com/pot-tokens: lint placeholder — no linter wired yet\""
   },
   "devDependencies": {
     "tsup": "^8.0.0",

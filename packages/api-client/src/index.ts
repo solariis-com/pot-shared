@@ -1,5 +1,5 @@
 /**
- * `@solariis/pot-api-client` — typed API client for the POT MVP backend.
+ * `@solariis-com/pot-api-client` — typed API client for the POT MVP backend.
  *
  * Status: scaffolding. The backend (TKT-2026-0859) is not yet implemented;
  * this package defines the SDK shape so consumers (pot-mobile, pot-web) can

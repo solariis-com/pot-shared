@@ -15,11 +15,11 @@ Este repo deriva sus contents de `solariis-com/pot-poc`:
 ```
 pot-shared/
 ├── packages/
-│   ├── types/          (@solariis/pot-types)
-│   ├── microcopy/      (@solariis/pot-microcopy)
-│   ├── tokens/         (@solariis/pot-tokens)
-│   ├── api-client/     (@solariis/pot-api-client)
-│   └── security/       (@solariis/pot-security)
+│   ├── types/          (@solariis-com/pot-types)
+│   ├── microcopy/      (@solariis-com/pot-microcopy)
+│   ├── tokens/         (@solariis-com/pot-tokens)
+│   ├── api-client/     (@solariis-com/pot-api-client)
+│   └── security/       (@solariis-com/pot-security)
 ├── .github/workflows/  (publish.yml)
 └── scripts/            (build/codegen helpers)
 ```

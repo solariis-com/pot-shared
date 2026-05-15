@@ -1,4 +1,4 @@
-# @solariis/pot-microcopy
+# @solariis-com/pot-microcopy
 
 ES-VE / EN microcopy catalog for the POT MVP (workers, commerce, consumers, admin, shared).
 
@@ -26,7 +26,7 @@ your `.npmrc` to authenticate to `npm.pkg.github.com` for the `@solariis` scope,
 then:
 
 ```bash
-pnpm add @solariis/pot-microcopy
+pnpm add @solariis-com/pot-microcopy
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ pnpm add @solariis/pot-microcopy
 ### Named locale imports
 
 ```ts
-import { es, en } from '@solariis/pot-microcopy';
+import { es, en } from '@solariis-com/pot-microcopy';
 
 es.worker.home.greeting({ firstName: 'Lucía' });
 // → 'Hola, Lucía'
@@ -49,7 +49,7 @@ es.shared.splash.brandTag;
 ### Locale-driven resolver
 
 ```ts
-import { getCatalog, type Locale } from '@solariis/pot-microcopy';
+import { getCatalog, type Locale } from '@solariis-com/pot-microcopy';
 
 function greet(locale: Locale, firstName: string) {
   const t = getCatalog(locale);
@@ -63,7 +63,7 @@ greet('en', 'Yuri'); // 'Hi, Yuri'
 ### Inline interpolation helper
 
 ```ts
-import { interpolate, tpl } from '@solariis/pot-microcopy';
+import { interpolate, tpl } from '@solariis-com/pot-microcopy';
 
 // One-shot
 interpolate('Bs {amount}', { amount: 250 }); // → 'Bs 250'

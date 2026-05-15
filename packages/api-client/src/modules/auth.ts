@@ -45,7 +45,7 @@ export type VerifyOtpInput = z.infer<typeof VerifyOtpInputSchema>;
  * The session envelope returned on successful verify/refresh.
  *
  * `user` is intentionally `unknown` at the api-client layer — the consumer
- * narrows via the discriminated `User` union from `@solariis/pot-types`.
+ * narrows via the discriminated `User` union from `@solariis-com/pot-types`.
  * Validating here would couple the SDK shape to the full user-schema graph;
  * post-backend codegen will tighten this.
  */

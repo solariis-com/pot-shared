@@ -1,13 +1,13 @@
 /**
- * @solariis/pot-tokens — design tokens for the POT MVP.
+ * @solariis-com/pot-tokens — design tokens for the POT MVP.
  *
  * Source of truth:
  *   - `pot-poc/lib/tokens.ts` (canonical export — mirrored exactly)
  *   - `pot-poc/docs/PRD.md` v2.6 §"Design System Canónico"
  *
  * Per-platform exports (CSS, Tailwind, React Native) live under the
- * `exports/` subpath — import via `@solariis/pot-tokens/css`,
- * `@solariis/pot-tokens/tailwind`, `@solariis/pot-tokens/native`.
+ * `exports/` subpath — import via `@solariis-com/pot-tokens/css`,
+ * `@solariis-com/pot-tokens/tailwind`, `@solariis-com/pot-tokens/native`.
  */
 
 export * from './colors';

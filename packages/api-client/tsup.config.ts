@@ -7,5 +7,5 @@ export default defineConfig({
   sourcemap: true,
   clean: true,
   target: 'es2020',
-  external: ['@solariis/pot-types'],
+  external: ['@solariis-com/pot-types'],
 });

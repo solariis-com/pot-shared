@@ -1,4 +1,4 @@
-# `@solariis/pot-types`
+# `@solariis-com/pot-types`
 
 Domain types + Zod schemas for the POT MVP (Phase 1).
 
@@ -10,7 +10,7 @@ validation; use the `Type` for plain type-level annotations.
 ## Install
 
 ```bash
-pnpm add @solariis/pot-types zod
+pnpm add @solariis-com/pot-types zod
 ```
 
 `zod` is a peer-friendly dep — the package depends on `zod@^3.23` but the
@@ -25,7 +25,7 @@ import {
   PoteLifecycleSchema,
   type PoteLifecycle,
   CreateTipDtoSchema,
-} from '@solariis/pot-types';
+} from '@solariis-com/pot-types';
 
 // Validate an inbound DTO before handing it to the service layer.
 const tipResult = CreateTipDtoSchema.safeParse(req.body);
@@ -78,7 +78,7 @@ package via the workflow in `pot-shared/CLAUDE.md`:
 
 - No business logic. The schemas validate shape — they do **not** compute
   dispersion math, KYC eligibility, or PoT URL HMACs. Those live in
-  `pot-backend` and (for HMAC) `@solariis/pot-security`.
+  `pot-backend` and (for HMAC) `@solariis-com/pot-security`.
 - No mock data / fixtures.
 - No runtime framework dependencies (no React, Next, NestJS, RN).
 - No DB ORM / migration code.

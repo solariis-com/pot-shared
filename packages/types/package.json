@@ -1,5 +1,5 @@
 {
-  "name": "@solariis/pot-types",
+  "name": "@solariis-com/pot-types",
   "version": "0.1.0",
   "description": "Domain types + Zod schemas for POT MVP",
   "license": "UNLICENSED",
@@ -20,7 +20,7 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
-    "lint": "echo \"@solariis/pot-types: lint placeholder — no linter wired yet\""
+    "lint": "echo \"@solariis-com/pot-types: lint placeholder — no linter wired yet\""
   },
   "dependencies": {
     "zod": "^3.23.0"

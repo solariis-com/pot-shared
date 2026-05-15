@@ -1,5 +1,5 @@
 /**
- * CSS variable export for `@solariis/pot-tokens`.
+ * CSS variable export for `@solariis-com/pot-tokens`.
  *
  * `toCssVars(prefix?)` produces a `:root { ... }` block ready to inject into a
  * global stylesheet. The default prefix is empty, so canonical PRD names like

@@ -1,11 +1,11 @@
 /**
- * Re-exports of domain types from `@solariis/pot-types` plus client-local
+ * Re-exports of domain types from `@solariis-com/pot-types` plus client-local
  * types that aren't appropriate for the shared types package (e.g. wire
  * envelopes, transport DTOs).
  *
  * The re-export indirection lets consumers do
- *   `import { Pote, PoteCreateInput } from '@solariis/pot-api-client';`
- * without also adding `@solariis/pot-types` to their dependency list.
+ *   `import { Pote, PoteCreateInput } from '@solariis-com/pot-api-client';`
+ * without also adding `@solariis-com/pot-types` to their dependency list.
  */
 export type {
   Pote,
@@ -29,7 +29,7 @@ export type {
   NaturalIdentity,
   JuridicoIdentity,
   EntityType,
-} from '@solariis/pot-types';
+} from '@solariis-com/pot-types';
 
 // ---- Client-local transport types (NOT domain — wire envelopes only) ----
 

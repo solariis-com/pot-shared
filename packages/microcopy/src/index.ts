@@ -1,15 +1,15 @@
 /**
- * `@solariis/pot-microcopy` — bilingual microcopy catalog for POT MVP.
+ * `@solariis-com/pot-microcopy` — bilingual microcopy catalog for POT MVP.
  *
  * Default usage:
  *
- *   import { es, en, interpolate } from '@solariis/pot-microcopy';
+ *   import { es, en, interpolate } from '@solariis-com/pot-microcopy';
  *   es.worker.home.greeting({ firstName: 'Lucía' });
  *   en.worker.home.greeting({ firstName: 'Lucia' });
  *
  * Or pick by locale:
  *
- *   import { getCatalog, type Locale } from '@solariis/pot-microcopy';
+ *   import { getCatalog, type Locale } from '@solariis-com/pot-microcopy';
  *   const t = getCatalog(locale);
  *
  * The ES catalog is the source of truth (mirrors `pot-poc/lib/microcopy.ts`).

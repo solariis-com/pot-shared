@@ -1,9 +1,9 @@
 /**
- * @solariis/pot-security — barrel.
+ * @solariis-com/pot-security — barrel.
  *
  * Re-exports all utility surfaces. Consumers should import named symbols:
  *   import { signJwt, verifyJwt, signHmac, verifyHmac, encryptPii, decryptPii,
- *            generateOtp, verifyOtp, buildAuditEvent } from '@solariis/pot-security';
+ *            generateOtp, verifyOtp, buildAuditEvent } from '@solariis-com/pot-security';
  */
 
 // JWT

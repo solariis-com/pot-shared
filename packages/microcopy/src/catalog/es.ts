@@ -2,7 +2,7 @@
  * POT microcopy ES-VE — canónico v2.3 (mirror of `pot-poc/lib/microcopy.ts`).
  *
  * REGLA CRÍTICA: todo string visible al usuario en pantallas DEBE
- * importar de este módulo (o del paquete `@solariis/pot-microcopy`).
+ * importar de este módulo (o del paquete `@solariis-com/pot-microcopy`).
  * Strings inline en JSX están PROHIBIDOS (NFR-MICROCOPY-01).
  *
  * Source of truth: `solariis-com/pot-poc/lib/microcopy.ts`. This file is a

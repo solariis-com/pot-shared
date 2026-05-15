@@ -1,5 +1,5 @@
 /**
- * Shared types for @solariis/pot-security.
+ * Shared types for @solariis-com/pot-security.
  * Kept dependency-free so consumers can re-export without pulling node-only deps.
  */
 

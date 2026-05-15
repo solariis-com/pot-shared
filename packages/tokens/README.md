@@ -1,4 +1,4 @@
-# @solariis/pot-tokens
+# @solariis-com/pot-tokens
 
 Design tokens for the POT MVP — published as a per-platform export pack so web (CSS / Tailwind) and native (React Native `StyleSheet`) surfaces share a single source of truth.
 
@@ -13,10 +13,10 @@ If the POC and the PRD diverge, the **PRD note** (`get_note(id="ef609c16-2c2d-4f
 
 | Surface | Import | Shape |
 |---|---|---|
-| CSS variables | `@solariis/pot-tokens/css` | `toCssVars(prefix?)` → `:root { --color-accent: ...; }` block; `cssVarsString` pre-rendered; `writeCss(path)` to dump to disk |
-| Tailwind theme | `@solariis/pot-tokens/tailwind` | `tailwindTheme` — spread into `theme.extend` in `tailwind.config.ts` |
-| React Native | `@solariis/pot-tokens/native` | `nativeStyleSheet` with hex colors, numeric spacing/radii, RN-shape shadows |
-| Raw tokens | `@solariis/pot-tokens` | `colors`, `spacing`, `radii`, `shadows`, `typography`, `breakpoints`, `tokens` aggregate |
+| CSS variables | `@solariis-com/pot-tokens/css` | `toCssVars(prefix?)` → `:root { --color-accent: ...; }` block; `cssVarsString` pre-rendered; `writeCss(path)` to dump to disk |
+| Tailwind theme | `@solariis-com/pot-tokens/tailwind` | `tailwindTheme` — spread into `theme.extend` in `tailwind.config.ts` |
+| React Native | `@solariis-com/pot-tokens/native` | `nativeStyleSheet` with hex colors, numeric spacing/radii, RN-shape shadows |
+| Raw tokens | `@solariis-com/pot-tokens` | `colors`, `spacing`, `radii`, `shadows`, `typography`, `breakpoints`, `tokens` aggregate |
 
 ## 60 / 30 / 8 / 2 proportion canon
 
@@ -65,10 +65,10 @@ Logo POT (wordmark) is visible only on a narrow set of brand surfaces. Full deta
 ### CSS
 
 ```ts
-import { cssVarsString } from '@solariis/pot-tokens/css';
+import { cssVarsString } from '@solariis-com/pot-tokens/css';
 
 // Inline into a `<style>` block, or:
-import { writeCss } from '@solariis/pot-tokens/css';
+import { writeCss } from '@solariis-com/pot-tokens/css';
 writeCss('./public/tokens.css');
 ```
 
@@ -77,7 +77,7 @@ writeCss('./public/tokens.css');
 ```ts
 // tailwind.config.ts
 import type { Config } from 'tailwindcss';
-import { tailwindTheme } from '@solariis/pot-tokens/tailwind';
+import { tailwindTheme } from '@solariis-com/pot-tokens/tailwind';
 
 export default {
   content: ['./app/**/*.{ts,tsx}'],
@@ -89,7 +89,7 @@ export default {
 
 ```ts
 import { StyleSheet } from 'react-native';
-import { nativeStyleSheet } from '@solariis/pot-tokens/native';
+import { nativeStyleSheet } from '@solariis-com/pot-tokens/native';
 
 const styles = StyleSheet.create({
   card: {
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
 
 ## Versioning
 
-`@solariis/pot-tokens` follows the monorepo semver convention (`pot-shared/CLAUDE.md`):
+`@solariis-com/pot-tokens` follows the monorepo semver convention (`pot-shared/CLAUDE.md`):
 - **patch** — value-preserving tweaks (doc fixes, export reshuffles)
 - **minor** — new tokens or new export targets
 - **major** — value or shape changes that break downstream consumers

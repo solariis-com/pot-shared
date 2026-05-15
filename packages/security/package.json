@@ -1,5 +1,5 @@
 {
-  "name": "@solariis/pot-security",
+  "name": "@solariis-com/pot-security",
   "version": "0.1.0",
   "description": "Security utilities for POT MVP (JWT, HMAC, encryption, OTP)",
   "license": "UNLICENSED",

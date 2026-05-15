@@ -1,5 +1,5 @@
 /**
- * Public types for `@solariis/pot-microcopy`.
+ * Public types for `@solariis-com/pot-microcopy`.
  *
  * ES is the shape-canonical catalog (per `pot-poc/lib/microcopy.ts` source of
  * truth). EN must match the ES shape one-for-one; the parity assertion lives

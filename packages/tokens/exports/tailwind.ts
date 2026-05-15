@@ -1,10 +1,10 @@
 /**
- * Tailwind theme export for `@solariis/pot-tokens`.
+ * Tailwind theme export for `@solariis-com/pot-tokens`.
  *
  * Spread `tailwindTheme` into `theme.extend` in `tailwind.config.ts`:
  *
  * ```ts
- * import { tailwindTheme } from '@solariis/pot-tokens/tailwind';
+ * import { tailwindTheme } from '@solariis-com/pot-tokens/tailwind';
  *
  * export default {
  *   theme: { extend: tailwindTheme },

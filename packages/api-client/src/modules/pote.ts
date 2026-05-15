@@ -17,11 +17,11 @@ import type { ListQuery, Paginated, RequestOptions } from '../types';
  *
  * The DTO schemas here are intentionally loose-ish — they describe the SDK
  * surface, not the canonical schema. The canonical PoteSchema lives in
- * `@solariis/pot-types`; post-codegen this module will validate responses
+ * `@solariis-com/pot-types`; post-codegen this module will validate responses
  * against that schema directly.
  */
 
-// Canonical domain schemas come from `@solariis/pot-types`. Using them here
+// Canonical domain schemas come from `@solariis-com/pot-types`. Using them here
 // keeps the SDK input validation consistent with the backend's source-of-
 // truth domain rules — no risk of drift between the two.
 import type {
@@ -30,12 +30,12 @@ import type {
   PoteIntegrante,
   PoteKind,
   PoteLifecycle,
-} from '@solariis/pot-types';
+} from '@solariis-com/pot-types';
 import {
   DistributionRuleSchema,
   PoteKindSchema,
   PoteLifecycleSchema,
-} from '@solariis/pot-types';
+} from '@solariis-com/pot-types';
 
 export const PoteCreateInputSchema = z.object({
   commerceId: z.string().uuid(),
