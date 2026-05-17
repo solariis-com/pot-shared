@@ -60,12 +60,21 @@ const microcopy = {
     home: {
       greeting: tpl('Hola, {firstName}'),
       reviewPrompt: 'Echale ojo',
+      // TKT-2026-0926/0927 — subtitle shown under the greeting on the
+      // mobile W-10 Home. POC mockup uses this exact copy.
+      reviewSubtitle: 'Revisá tus propinas de hoy',
       todayIncome: 'Ingresos hoy',
       tipsCount: '# de propinas',
       avgTicket: 'Ticket promedio',
+      // TKT-2026-0927 — mobile W-10 EarningsCard hero label.
+      totalEarnings: 'Ganancias totales',
       recentTips: 'Últimas propinas',
+      // TKT-2026-0927 — Mobile W-10 "Historial reciente" section header.
+      recentHistoryTitle: 'Historial reciente',
       viewAll: 'Ver todo',
       shareQR: 'Compartí tu QR',
+      // TKT-2026-0927 — Mobile W-10 PendingInviteBanner title.
+      pendingInviteTitle: 'Te invitaron a un pote',
       pendingAcceptanceOne: '1 pote esperando tu aceptación',
       pendingAcceptanceMany: tpl('{count} potes esperando tu aceptación'),
       pendingAcceptanceCta: 'Ir',
@@ -181,6 +190,16 @@ const microcopy = {
     },
     pote: {
       myPotesTitle: 'Mis potes',
+      // TKT-2026-0927 — W-30 Mis potes empty-state copy.
+      myPotesEmptyActive: 'Aún no tenés potes activos.',
+      // TKT-2026-0927 — W-14 Pote detail "Configure" CTA.
+      configureCta: 'Configurar pote',
+      // TKT-2026-0927 — W-16 Pote config screen title.
+      editTitle: 'Editar pote',
+      // TKT-2026-0927 — W-30 short "+ Crear" CTA used in the section
+      // header beside Mis potes (full text "Crear pote" stays on the
+      // primary CTA elsewhere).
+      createShort: '+ Crear',
       joinTitle: 'Unirme a pote',
       joinHeading: 'Código de invitación',
       joinPrompt: 'Código de invitación',
