@@ -150,6 +150,14 @@ const microcopy = {
       editAccountTitle: 'Editar cuenta destino',
       editOtpWarning: 'Por seguridad te pediremos tu OTP de nuevo.',
       saveChanges: 'Guardar cambios',
+      // TKT-2026-0995 — W-19 Pago Móvil destination sheet (added in
+      // TKT-2026-0993 / 0994). The Banco-destino sheet now collects
+      // three fields (banco + teléfono + cédula) instead of one.
+      pagoMovilTitle: 'Pago Móvil destino',
+      pagoMovilBody: 'Tres datos para que las propinas lleguen: banco, teléfono Pago Móvil y cédula del titular. El teléfono puede ser distinto al de tu cuenta POT.',
+      pagoMovilPhoneLabel: 'Teléfono Pago Móvil',
+      pagoMovilCedulaLabel: 'Cédula del titular',
+      pagoMovilUseAccountPhone: 'Usar el teléfono de mi cuenta',
     },
     push: {
       tipReceivedTitle: 'Llegó una propina',

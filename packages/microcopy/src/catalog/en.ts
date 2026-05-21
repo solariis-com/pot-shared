@@ -149,6 +149,12 @@ const microcopy = {
       editAccountTitle: 'Edit destination account',
       editOtpWarning: "For security we'll ask for your OTP again.",
       saveChanges: 'Save changes',
+      // TKT-2026-0995 — W-19 Pago Móvil destination sheet.
+      pagoMovilTitle: 'Pago Móvil destination',
+      pagoMovilBody: "Three values for tips to arrive: bank, Pago Móvil phone, and the holder's cedula. The phone can be different from your POT account phone.",
+      pagoMovilPhoneLabel: 'Pago Móvil phone',
+      pagoMovilCedulaLabel: "Holder's cedula",
+      pagoMovilUseAccountPhone: 'Use my account phone',
     },
     push: {
       tipReceivedTitle: 'New tip',
