@@ -52,6 +52,14 @@ const microcopy = {
       pushBody: "We'll ping you the moment a tip lands.",
       termsTitle: 'Terms & conditions',
       termsSubtitle: 'Short summary. Full version at POT.app/terms.',
+      // TKT-2026-1106 — in-app summary of the worker terms.
+      termsBody:
+        'By creating your POT account you accept:\n\n' +
+        '• To receive digital tips directly to your Pago Móvil.\n' +
+        '• That POT processes tips through partner Venezuelan banks.\n' +
+        '• Encrypted storage (AES-256-GCM) of your cédula, phone, and bank details — only POT can read them to process payments.\n' +
+        '• That tips you receive are yours and POT charges no commission on the amount.\n\n' +
+        'You can delete your account anytime. Read the full version at POT.app/terms.',
       termsAccept: 'I accept the terms',
       termsAcceptCheckbox: 'I accept the terms & conditions',
       qrReadyTitle: tpl("You're set, {firstName}!"),
@@ -322,6 +330,14 @@ const microcopy = {
       kycReviewWarningTitle: 'Heads up',
       kycReviewWarningBody:
         'Changes to fiscal data (RIF, legal name, address) require a new verification (24h). Your business will pause payments until approved.',
+      // TKT-2026-1106 — in-app summary of the commerce terms.
+      termsBody:
+        'By registering your business on POT you accept:\n\n' +
+        '• To use POT to receive and distribute digital tips across your team.\n' +
+        '• That distributed tips do NOT pass through your business cash flow — they go directly from the customer to the worker’s Pago Móvil.\n' +
+        '• Encrypted storage (AES-256-GCM) of your RIF, banking details, and your team’s details.\n' +
+        '• Tax and regulatory responsibility for distributed tips, per current Venezuelan law.\n\n' +
+        'You can deactivate your business anytime. Read the full version at POT.app/terms-commerce.',
     },
     home: {
       greeting: tpl('Hi {firstName}'),
