@@ -795,6 +795,19 @@ const microcopy = {
       brandTag: 'Pagos Oportunos y Transparentes',
       brandTagCommerce: 'POT · Negocio',
     },
+    // TKT-2026-1101 — "Cambiar rol" partial-logout flow on W-19 +
+    // C-22 Settings. Distinct from full Cerrar sesión: clears the
+    // persisted role + onboarding-completion + home stores but
+    // KEEPS the identity (phone + userId + cédula) so the next
+    // onboarding pass doesn't need to re-OTP.
+    cambiarRol: {
+      rowTitle: 'Cambiar rol',
+      rowSubtitle: 'Volver a la pantalla de selección',
+      confirmTitle: '¿Cambiar de rol?',
+      confirmBody: 'Volverás a la pantalla de selección. Tus datos quedan guardados; no necesitas verificar tu teléfono de nuevo.',
+      confirmCta: 'Cambiar rol',
+      cancel: 'Cancelar',
+    },
     // TKT-2026-1100 (initial) + TKT-2026-1121 (MVP simplification) —
     // distribution-rule labels. Per Marco's MVP scope (2026-05-27): MVP
     // ships 2 dropdown options (equal + manual). "weighted" / "Por peso"
