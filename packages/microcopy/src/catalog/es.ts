@@ -48,6 +48,18 @@ const microcopy = {
       pushBody: 'Te avisamos apenas recibís una propina.',
       termsTitle: 'Términos y condiciones',
       termsSubtitle: 'Resumen breve. Versión completa en POT.app/terms.',
+      // TKT-2026-1106 — in-app summary of the worker terms. The full legal
+      // version lives at the external URL referenced in `termsExternalUrl`
+      // (account section). Acceptance remains implicit per the Welcome
+      // screen's disclaimer (TKT-2026-1018 P0 #9); the consent_log row on
+      // the backend POST is the legal evidence.
+      termsBody:
+        'Al crear tu cuenta en POT aceptas:\n\n' +
+        '• Recibir propinas digitales directamente en tu Pago Móvil.\n' +
+        '• Que POT procese las propinas a través de bancos venezolanos asociados.\n' +
+        '• El almacenamiento cifrado (AES-256-GCM) de tu cédula, teléfono y datos bancarios — solo POT puede leerlos para procesar pagos.\n' +
+        '• Que las propinas recibidas son tuyas y POT no cobra comisión sobre el monto.\n\n' +
+        'Puedes eliminar tu cuenta cuando quieras. Lee el detalle completo en POT.app/terms.',
       termsAccept: 'Acepto los términos',
       termsAcceptCheckbox: 'Acepto los términos y condiciones',
       qrReadyTitle: tpl('¡Listo, {firstName}!'),
@@ -331,6 +343,18 @@ const microcopy = {
       kycReviewWarningTitle: 'Atención',
       kycReviewWarningBody:
         'Cambios en datos fiscales (RIF, razón social, dirección) requieren verificación nueva (24h). Tu comercio pausará pagos hasta aprobar.',
+      // TKT-2026-1106 — in-app summary of the commerce terms. Full legal
+      // version lives at POT.app/terms-commerce. Acceptance is implicit
+      // per the C-02 Welcome disclaimer (mirror of the worker-side P0 #9
+      // pattern from TKT-2026-1018); the consent_log row written by the
+      // onboard-commerce POST is the legal evidence.
+      termsBody:
+        'Al registrar tu comercio en POT aceptas:\n\n' +
+        '• Usar POT para recibir y distribuir propinas digitales entre tu equipo.\n' +
+        '• Que las propinas distribuidas NO pasan por la caja del comercio — van directo del cliente al Pago Móvil del trabajador.\n' +
+        '• El almacenamiento cifrado (AES-256-GCM) de tu RIF, datos bancarios y los de tu equipo.\n' +
+        '• La responsabilidad fiscal y tributaria de las propinas distribuidas, según la normativa venezolana vigente.\n\n' +
+        'Puedes desactivar tu comercio cuando quieras. Lee el detalle completo en POT.app/terms-commerce.',
     },
     home: {
       greeting: tpl('Hola {firstName}'),
