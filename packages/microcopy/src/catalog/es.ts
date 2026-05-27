@@ -45,7 +45,7 @@ const microcopy = {
       bankHolderPhone: 'Teléfono Pago Móvil',
       bankInfo: 'Aquí te llegan las propinas. Lo puedes cambiar luego desde Mi cuenta.',
       pushTitle: 'Entérate al instante',
-      pushBody: 'Te avisamos apenas recibís una propina.',
+      pushBody: 'Te avisamos apenas recibes una propina.',
       termsTitle: 'Términos y condiciones',
       termsSubtitle: 'Resumen breve. Versión completa en POT.app/terms.',
       // TKT-2026-1106 — in-app summary of the worker terms. The full legal
@@ -84,7 +84,7 @@ const microcopy = {
       // TKT-2026-0927 — Mobile W-10 "Historial reciente" section header.
       recentHistoryTitle: 'Historial reciente',
       viewAll: 'Ver todo',
-      shareQR: 'Compartí tu QR',
+      shareQR: 'Comparte tu QR',
       // TKT-2026-0927 — Mobile W-10 PendingInviteBanner title.
       pendingInviteTitle: 'Te invitaron a un pote',
       pendingAcceptanceOne: '1 pote esperando tu aceptación',
@@ -113,8 +113,8 @@ const microcopy = {
       groupToday: 'Hoy',
       groupYesterday: 'Ayer',
       anonymous: 'Anónimo',
-      empty: 'Aún no tenés propinas',
-      emptyBody: 'Compartí tu QR para empezar a recibir.',
+      empty: 'Aún no tienes propinas',
+      emptyBody: 'Comparte tu QR para empezar a recibir.',
       seeMyQR: 'Ver mi QR',
     },
     txDetail: {
@@ -173,13 +173,13 @@ const microcopy = {
     },
     push: {
       tipReceivedTitle: 'Llegó una propina',
-      tipReceivedBody: tpl('Tenés Bs {amount} nuevos'),
+      tipReceivedBody: tpl('Tienes Bs {amount} nuevos'),
       tipReceivedViewDetail: 'Ver detalle',
     },
     state: {
       arrived: '¡Llegó!',
       noConnection: 'Sin conexión',
-      noConnectionBody: 'No pudimos conectar. Verificá tu internet y volvé a intentar.',
+      noConnectionBody: 'No pudimos conectar. Verificá tu internet y vuelve a intentar.',
       serviceDown: 'Servicio temporalmente no disponible',
       retry: 'Reintentar',
     },
@@ -194,8 +194,8 @@ const microcopy = {
       title: 'Soporte',
       searchPlaceholder: 'Buscar en FAQs',
       whatsapp: 'Chatear por WhatsApp',
-      whatsappFallbackTitle: '¿No tenés WhatsApp?',
-      whatsappFallbackBody: 'Escribinos a soporte@po-t.app y te respondemos en 24h.',
+      whatsappFallbackTitle: '¿No tienes WhatsApp?',
+      whatsappFallbackBody: 'Escríbenos a soporte@po-t.app y te respondemos en 24h.',
       whatsappFallbackEmail: 'soporte@po-t.app',
     },
     login: {
@@ -211,7 +211,7 @@ const microcopy = {
     pote: {
       myPotesTitle: 'Mis potes',
       // TKT-2026-0927 — W-30 Mis potes empty-state copy.
-      myPotesEmptyActive: 'Aún no tenés potes activos.',
+      myPotesEmptyActive: 'Aún no tienes potes activos.',
       // TKT-2026-0927 — W-14 Pote detail "Configure" CTA.
       configureCta: 'Configurar pote',
       // TKT-2026-0927 — W-16 Pote config screen title.
@@ -248,7 +248,7 @@ const microcopy = {
       acceptInvitedBy: tpl('{managerName} te invitó a {poteName}'),
       acceptHowItWorksTitle: 'Cómo funciona',
       acceptHowItWorksBody:
-        'Cuando un cliente deje propina al pote, R4 distribuirá automáticamente tu parte según la regla acordada. Recibís tu propina en tu cuenta al instante.',
+        'Cuando un cliente deje propina al pote, R4 distribuirá automáticamente tu parte según la regla acordada. Recibes tu propina en tu cuenta al instante.',
       acceptRuleSectionTitle: 'Regla de distribución',
       acceptMembersTitle: 'Integrantes del pote',
       acceptCta: 'Aceptar y unirme',
@@ -271,7 +271,7 @@ const microcopy = {
       demoModeStale: 'Modo: Invitación expirada',
       staleTitle: 'Invitación ya no válida',
       staleBody:
-        'El manager canceló esta invitación o archivó el pote. Pedile uno nuevo si querés unirte.',
+        'El manager canceló esta invitación o archivó el pote. Pídele uno nuevo si quieres unirte.',
       staleCta: 'Volver a Mis potes',
     },
   },
@@ -331,7 +331,7 @@ const microcopy = {
       uploadCamera: 'Tomar foto con la cámara',
       uploadSubmit: 'Subir y enviar',
       pendingTitle: 'Estamos verificando tu comercio',
-      pendingBody: 'Te avisamos en menos de 24h. Mientras tanto, ya podés crear tu primer pote.',
+      pendingBody: 'Te avisamos en menos de 24h. Mientras tanto, ya puedes crear tu primer pote.',
       pendingCta: 'Crear primer pote',
       pendingBack: 'Volver al inicio',
       success: 'Tu pote está listo',
@@ -339,7 +339,7 @@ const microcopy = {
       rejectedBody:
         'Razón: El registro mercantil subido no coincide con el RIF declarado. Verifica y vuelve a subir.',
       rejectedCta: 'Volver a enviar documentos',
-      rejectedContactSupport: 'Si tenés dudas, escribinos a soporte@po-t.app',
+      rejectedContactSupport: 'Si tienes dudas, escríbenos a soporte@po-t.app',
       kycReviewWarningTitle: 'Atención',
       kycReviewWarningBody:
         'Cambios en datos fiscales (RIF, razón social, dirección) requieren verificación nueva (24h). Tu comercio pausará pagos hasta aprobar.',
@@ -537,7 +537,7 @@ const microcopy = {
       changePagoMovil: 'Cambiar Pago Móvil (re-OTP)',
       kycRejectedTitle: 'No pudimos verificar tu comercio',
       kycRejectedBody:
-        'Razón: el registro mercantil subido no coincide con el RIF declarado. Verificá y volvé a subir.',
+        'Razón: el registro mercantil subido no coincide con el RIF declarado. Verificá y vuelve a subir.',
       kycResubmit: 'Volver a enviar documentos',
     },
   },
@@ -573,9 +573,9 @@ const microcopy = {
       bankPickerBody: 'Seleccioná el banco emisor del pago.',
       debitoTitle: 'Débito Inmediato',
       debitoIntro: 'Genera la clave en tu banco y pégala aquí.',
-      debitoStep1: 'Abrí tu app bancaria',
-      debitoStep2: 'Generá la clave de 8 dígitos',
-      debitoStep3: 'Volvé y pegala abajo',
+      debitoStep1: 'Abre tu app bancaria',
+      debitoStep2: 'Genera la clave de 8 dígitos',
+      debitoStep3: 'Vuelve y pégala abajo',
       debitoKeyLabel: 'Clave de 8 dígitos',
       debitoSafety: '🔒 La clave expira en 2 minutos. Tu dinero va directo al Pago Móvil.',
       debitoConfirm: 'Confirmar pago',
@@ -778,8 +778,8 @@ const microcopy = {
     },
     errors: {
       generic: 'Algo salió mal',
-      retry: 'Volvé a intentar',
-      network: 'Sin conexión. Probá de nuevo.',
+      retry: 'Vuelve a intentar',
+      network: 'Sin conexión. Prueba de nuevo.',
       r4Unavailable: 'Servicio temporalmente no disponible',
       invalidOtp: 'El código no coincide',
       badKey: 'Clave inválida',
