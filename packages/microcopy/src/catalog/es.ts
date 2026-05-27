@@ -795,6 +795,18 @@ const microcopy = {
       brandTag: 'Pagos Oportunos y Transparentes',
       brandTagCommerce: 'POT · Negocio',
     },
+    // TKT-2026-1100 — distribution-rule labels for the W-14 PoteDetail
+    // MetaRow + future migrations of W-16 / C-21 / C-12 select options
+    // off hardcoded strings. The rule key vocabulary matches what
+    // MockPote.rule persists ("personal" / "equal" / "weighted" /
+    // "manual" per the canonical W-16 PotSelect options). "Personal"
+    // is worker-only + set at create-time; not present in the select.
+    distributionRule: {
+      personal: 'Personal',
+      equal: 'Partes iguales',
+      weighted: 'Por peso',
+      manual: 'Manual por turno',
+    },
     identity: {
       entityType: {
         labelDestino: 'Destino del pago',

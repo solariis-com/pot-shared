@@ -776,6 +776,13 @@ const microcopy = {
       brandTag: 'Timely & Transparent Tips',
       brandTagCommerce: 'POT · Business',
     },
+    // TKT-2026-1100 — distribution-rule labels (EN).
+    distributionRule: {
+      personal: 'Personal',
+      equal: 'Equal shares',
+      weighted: 'By weight',
+      manual: 'Manual per shift',
+    },
     identity: {
       entityType: {
         labelDestino: 'Payment destination',
