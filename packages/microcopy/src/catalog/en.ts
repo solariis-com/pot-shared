@@ -776,6 +776,15 @@ const microcopy = {
       brandTag: 'Timely & Transparent Tips',
       brandTagCommerce: 'POT · Business',
     },
+    // TKT-2026-1101 — "Switch role" partial-logout (EN).
+    cambiarRol: {
+      rowTitle: 'Switch role',
+      rowSubtitle: 'Back to the role-selection screen',
+      confirmTitle: 'Switch role?',
+      confirmBody: 'You will return to the role-selection screen. Your details are saved; you will not need to re-verify your phone.',
+      confirmCta: 'Switch role',
+      cancel: 'Cancel',
+    },
     // TKT-2026-1100 (initial) + TKT-2026-1121 (MVP simplification).
     // EN mirror of the ES rule set: MVP ships equal + manual only.
     distributionRule: {
