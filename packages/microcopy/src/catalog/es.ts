@@ -795,17 +795,20 @@ const microcopy = {
       brandTag: 'Pagos Oportunos y Transparentes',
       brandTagCommerce: 'POT · Negocio',
     },
-    // TKT-2026-1100 — distribution-rule labels for the W-14 PoteDetail
-    // MetaRow + future migrations of W-16 / C-21 / C-12 select options
-    // off hardcoded strings. The rule key vocabulary matches what
-    // MockPote.rule persists ("personal" / "equal" / "weighted" /
-    // "manual" per the canonical W-16 PotSelect options). "Personal"
-    // is worker-only + set at create-time; not present in the select.
+    // TKT-2026-1100 (initial) + TKT-2026-1121 (MVP simplification) —
+    // distribution-rule labels. Per Marco's MVP scope (2026-05-27): MVP
+    // ships 2 dropdown options (equal + manual). "weighted" / "Por peso"
+    // is intentionally dropped — the % UX for per-member weights doesn't
+    // exist yet, and "Manual" already covers the manual-assignment use
+    // case. "personal" stays as a default for worker-only single-recipient
+    // potes (set at create-time, not in the dropdown).
+    //
+    // Manual label renamed to "Manual Porcentajes" (was "Manual por turno")
+    // to match the actual semantics: user assigns a % to each member.
     distributionRule: {
       personal: 'Personal',
       equal: 'Partes iguales',
-      weighted: 'Por peso',
-      manual: 'Manual por turno',
+      manual: 'Manual Porcentajes',
     },
     identity: {
       entityType: {

@@ -776,12 +776,12 @@ const microcopy = {
       brandTag: 'Timely & Transparent Tips',
       brandTagCommerce: 'POT · Business',
     },
-    // TKT-2026-1100 — distribution-rule labels (EN).
+    // TKT-2026-1100 (initial) + TKT-2026-1121 (MVP simplification).
+    // EN mirror of the ES rule set: MVP ships equal + manual only.
     distributionRule: {
       personal: 'Personal',
       equal: 'Equal shares',
-      weighted: 'By weight',
-      manual: 'Manual per shift',
+      manual: 'Manual percentages',
     },
     identity: {
       entityType: {
